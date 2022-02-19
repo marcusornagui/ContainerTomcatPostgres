@@ -16,3 +16,6 @@ No diretório do projeto basta executar o comando abaixo para iniciar o containe
 ```
  docker-compose -f docker-compose-tp.yml up -d
 ```
+
+### Porta Padrão
+9012
