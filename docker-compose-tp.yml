@@ -1,0 +1,18 @@
+version: "1.0"
+services:
+  tomcatpostgres:
+    container_name: "tomcatpostgres"
+    networks:
+      - front
+      - back
+    image: marcusornagui/tomcatpostgres:1.0
+    ports:
+      - "9012:9012"
+    environment:
+        - TZ=GMT-3
+    restart: always
+networks:
+  front:
+    driver: bridge
+  back:
+    driver: bridge
